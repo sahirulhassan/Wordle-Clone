@@ -1,0 +1,71 @@
+body {
+    background-color: #FEFACD; /*Lemon Chiffon*/
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-block: 40px;
+}
+
+.letter-grid {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+
+    width: fit-content;
+    margin: auto;
+    padding: 5%;
+    background-color: #5F4A8B; /*Ultra Violet*/
+
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.row {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    aspect-ratio: 1/1;
+    width: 8vw;
+    font-size: 2rem;
+    color: #FEFACD; /*Lemon Chiffon*/
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 6px rgba(254, 250, 205, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 14px rgba(254, 250, 205, 0.8);
+    }
+}
+
+.highlight {
+    animation: glow 1.2s ease-in-out infinite alternate;
+}
+
+.yellow {
+    border: 1px solid #ffbb00;
+}
+
+.green {
+    border: 1px solid #39ff14;
+}
+
+.red {
+    border: 1px solid #d81103;
+}
