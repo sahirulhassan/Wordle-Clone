@@ -73,14 +73,14 @@ async function handleEnter() {
     if (cursor.col === 5) {
         const usersWord = Array.from(rowList[cursor.row].children).map(d => d.innerText.trim()).join("");
         if (usersWord === wordOfTheDay) {
-            console.log("You Win!");
+            alert("You Win!");
             return;
         } else {
             await handleMismatch(usersWord);
         }
     }
     if (cursor.row === 6) {
-        console.log("Game Over");
+        alert("You Lose!");
     }
     
 }
