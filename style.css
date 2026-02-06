@@ -1,5 +1,7 @@
 body {
     background-color: #FEFACD; /*Lemon Chiffon*/
+    height: 100vh;
+    overflow: hidden;
 }
 
 .header {
@@ -7,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    margin-block: 40px;
+    margin-block: 20px;
 }
 
 .letter-grid {
@@ -17,7 +19,7 @@ body {
 
     width: fit-content;
     margin: auto;
-    padding: 5%;
+    padding: 10px;
     background-color: #5F4A8B; /*Ultra Violet*/
 
     border-radius: 10px;
@@ -40,7 +42,8 @@ body {
     border-radius: 5px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     aspect-ratio: 1/1;
-    width: 8vw;
+    width: 10vmin;
+    height: 10vmin;
     font-size: 2rem;
     color: #FEFACD; /*Lemon Chiffon*/
 }
